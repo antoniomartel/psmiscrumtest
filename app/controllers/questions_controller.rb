@@ -1,13 +1,13 @@
 # This file is app/controllers/questions_controller.rb
 class QuestionsController < ApplicationController
   def index
-    @questions = Question.all
+    # @questions = Question.all
   end
 
   def show
     id = params[:id] # retrieve question ID from URI route
 
-    @question = Question.find(id) # look up question by unique ID
+    #@question = Question.find(id) # look up question by unique ID
     # will render app/views/question/show.<extension> by default
   end
 
